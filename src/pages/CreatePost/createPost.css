@@ -1,0 +1,220 @@
+.create-post-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100dvh - 78px);
+  padding: 15px 0;
+}
+.create-post-wrapper {
+  position: relative;
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 15px;
+  padding: 25px 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(213, 210, 210, 0.359);
+}
+.apartment-post-form {
+  width: 100%;
+}
+.custom-number-input::-webkit-outer-spin-button,
+.custom-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* .custom-number-input[type="number"] {
+  -moz-appearance: textfield;
+} */
+.apartment-form-body > div {
+  margin-bottom: 15px;
+}
+.apartment-form-body .form-buttons {
+  margin: 0 !important;
+}
+.posting-apartment-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.posting-apartment-image {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.posting-apartment-image img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.delete-btn {
+  display: none;
+  transition: display 1s;
+  align-items: center;
+  justify-content: center;
+}
+.posting-apartment-image:hover .delete-btn {
+  display: flex;
+  transition: display 1s;
+}
+.option {
+  position: absolute;
+  padding: 3px 0;
+  top: 102%;
+  left: 0;
+  right: 0;
+  z-index: 55;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  list-style: none;
+  border: 1.4px solid rgb(162, 162, 162);
+  color: rgb(71, 68, 68);
+}
+.option li {
+  padding: 7px;
+  margin: 3px 0;
+  cursor: pointer;
+  font-weight: 500;
+  border-left: 2px solid #fff;
+}
+.option li:hover {
+  background-color: rgb(228, 255, 255);
+  border-left: 2px solid blueviolet;
+  color: blueviolet;
+}
+.delete-btn button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(246, 39, 28);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.adding-apartment-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adding-apartment-btns > button {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+.adding-apartment-btns button:hover {
+  background-color: rgb(119, 43, 189);
+  transition: background-color 0.3s;
+}
+.apartment-post-form-columns {
+  display: flex;
+  column-gap: 25px;
+}
+.form-btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+  padding-right: 10px;
+}
+.form-btn-group > button {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+.form-btn-group > button:first-child {
+  background-color: rgb(246, 39, 28);
+  margin-right: 15px;
+}
+.form-btn-group > button:first-child:hover {
+  background-color: rgb(230, 3, 45);
+  transition: background-color 0.3s;
+}
+.form-btn-group > button:last-child:hover {
+  background-color: rgb(119, 43, 189);
+  transition: background-color 0.3s;
+}
+.map {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.uploading-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+}
+.uploading-loader h2 {
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .create-post-wrapper {
+    position: relative;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .apartment-post-form-columns {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+@media (max-width: 430px) {
+  .posting-apartment-images {
+    flex-wrap: wrap;
+  }
+}

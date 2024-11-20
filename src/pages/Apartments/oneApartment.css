@@ -1,0 +1,47 @@
+.back-btn {
+  background-color: blueviolet;
+  margin: 15px 0;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.one-apartment-inner {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.one-apartment-inner .one-apartment-wrapper {
+  width: 100%;
+  min-height: 80dvh;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.one-apartment-wrapper .one-apartment-images {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.one-apartment-images .one-apartment-image {
+  height: 300px;
+  width: 350px;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.one-apartment-images .one-apartment-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 3px;
+  object-fit: cover;
+}

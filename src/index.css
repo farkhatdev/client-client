@@ -1,0 +1,52 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&subset=cyrillic");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, "Times New Roman";
+}
+:root {
+  --blue: #2b67f6;
+  --text-color: #333333;
+  user-select: none;
+}
+.app {
+  min-height: 100dvh;
+  position: relative;
+  background-color: #f9f6ff;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(110, 109, 109);
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+.steps {
+  width: 90%;
+  display: grid;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  grid-template-columns: repeat(3, 1fr);
+  transform: translateX(-50%);
+}
+.step {
+  height: 5px;
+  background-color: rgb(168, 255, 185);
+  border-radius: 10px;
+}
+.step.active {
+  background-color: rgb(16, 250, 16);
+}
